@@ -29,7 +29,7 @@ const PersonalHome: FC = () => {
           <Text fontWeight={600}>Home</Text>
         </Flex>
         <Stack spacing={3}>
-          <Text fontSize="9pt">Your personal Reddit frontpage, built for you.</Text>
+          <Text fontSize="9pt">Your personal Pureflow frontpage, built for you.</Text>
           <Button height="30px" onClick={onClick}>
             Create Post
           </Button>

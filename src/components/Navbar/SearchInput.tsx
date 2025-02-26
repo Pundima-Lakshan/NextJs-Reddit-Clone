@@ -16,7 +16,7 @@ const SearchInput: FC<SearchInputProps> = ({ user }) => {
           <SearchIcon mb={2} />
         </InputLeftElement>
         <Input
-          placeholder="Search Reddit"
+          placeholder="Search Posts"
           fontSize="10pt"
           _placeholder={{ color: "gray.500" }}
           _hover={{

@@ -5,7 +5,7 @@ import { Button, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 
 const Premium: FC = () => {
   return (
-    <Flex direction="column" bg="white" borderRadius={4} cursor="pointer" p="12px" border="1px solid" borderColor="gray.300">
+    <Flex direction="column" bg="white" borderRadius={4} cursor="pointer" p="12px" border="1px solid" borderColor="gray.300" display="none">
       <Flex mb={2}>
         <Icon as={GiCheckedShield} fontSize={26} color="brand.100" mt={2} />
         <Stack spacing={1} fontSize="9pt" pl={2}>
