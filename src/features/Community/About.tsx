@@ -15,6 +15,7 @@ import { useRouter } from "next/router";
 import { communityState } from "../../atoms/communitiesAtom";
 import { auth, firestore, storage } from "../../firebase/clientApp";
 import { Community } from "../../types/CommunityState";
+import { PureflowLogoIcon } from "@/icons";
 
 type AboutProps = {
   communityData: Community;
@@ -138,7 +139,7 @@ const About: FC<AboutProps> = ({ communityData, pt, onCreatePage, loading }) => 
                       {communityData?.imageURL || selectedFile ? (
                         <Image borderRadius="full" boxSize="40px" src={selectedFile || communityData?.imageURL} alt="Dan Abramov" />
                       ) : (
-                        <Icon as={FaReddit} fontSize={40} color="brand.100" mr={2} />
+                        <Icon as={PureflowLogoIcon} fontSize={40} color="brand.100" mr={2} />
                       )}
                     </Flex>
                     {selectedFile &&

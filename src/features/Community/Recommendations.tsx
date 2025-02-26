@@ -8,6 +8,7 @@ import Link from "next/link";
 import { firestore } from "../../firebase/clientApp";
 import useCommunityData from "../../hooks/useCommunityData";
 import { Community } from "../../types/CommunityState";
+import { PureflowLogoIcon } from "@/icons";
 
 type RecommendationsProps = {};
 
@@ -48,10 +49,10 @@ const Recommendations: FC<RecommendationsProps> = () => {
         height="70px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/recCommsArt.png)"
+        bgImage="url(/images/pureflow-backdrop-1.png)"
         backgroundSize="cover"
         bgGradient="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
-        url('images/recCommsArt.png')"
+        url('images/pureflow-backdrop-1.png')"
       >
         Top Communities
       </Flex>
@@ -86,7 +87,7 @@ const Recommendations: FC<RecommendationsProps> = () => {
                         {item.imageURL ? (
                           <Image borderRadius="full" boxSize="28px" src={item.imageURL} mr={2} alt="community image" />
                         ) : (
-                          <Icon as={FaReddit} fontSize={30} color="brand.100" mr={2} />
+                          <Icon as={PureflowLogoIcon} fontSize={30} color="brand.100" mr={2} />
                         )}
                         <span
                           style={{

@@ -20,8 +20,8 @@ const Navbar: FC = () => {
   return (
     <Flex bg="white" height="44px" padding="6px 12px" justifyContent={{ md: "space-between" }}>
       <Flex align="center" width={{ base: "40px", md: "auto" }} mr={{ base: 0, md: 2 }} cursor="pointer" onClick={() => onSelectMenuItem(defaultMenuItem)}>
-        <Image src="/images/redditFace.svg" height="30px" alt="reddit icon" />
-        <Image display={{ base: "none", md: "unset" }} src="/images/redditText.svg" height="46px" alt="reddit text" />
+        <Image src="/images/pureflow-logo.svg" height="30px" alt="reddit icon" borderRadius="full" />
+        <Image display={{ base: "none", md: "unset" }} src="/images/pureflow-text.png" height="30px" alt="reddit text" />
       </Flex>
       {user && <Directory />}
       <SearchInput user={user as User} />

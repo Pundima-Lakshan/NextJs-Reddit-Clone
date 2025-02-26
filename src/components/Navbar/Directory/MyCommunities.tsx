@@ -7,6 +7,7 @@ import { Box, Flex, Icon, MenuItem, Text } from "@chakra-ui/react";
 import useCommunityModal from "../../../hooks/useCommunityModal";
 import { CommunitySnippet } from "../../../types/CommunityState";
 import MenuListItem from "./MenuListItem";
+import { PureflowLogoIcon } from "@/icons";
 
 type MyCommunitiesProps = {
   snippets: CommunitySnippet[];
@@ -29,7 +30,7 @@ const MyCommunities: FC<MyCommunitiesProps> = ({ snippets }) => {
       {snippets.map((snippet) => (
         <MenuListItem
           key={snippet.communityId}
-          icon={FaReddit}
+          icon={PureflowLogoIcon}
           displayText={`r/${snippet.communityId}`}
           link={`/r/${snippet.communityId}`}
           iconColor="blue.500"

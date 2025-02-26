@@ -6,6 +6,7 @@ import { Box, Flex, Icon, Spinner, Stack, Text } from "@chakra-ui/react";
 import moment from "moment";
 
 import { Comment } from "../../../types/Comment";
+import { PureflowLogoIcon } from "@/icons";
 
 type CommentItemProps = {
   comment: Comment;
@@ -18,7 +19,7 @@ const CommentItem: FC<CommentItemProps> = ({ comment, onDeleteComment, isLoading
   return (
     <Flex>
       <Box mr={2}>
-        <Icon as={FaReddit} fontSize={30} color="gray.300" />
+        <Icon as={PureflowLogoIcon} fontSize={30} color="gray.300" />
       </Box>
       <Stack spacing={1}>
         <Stack direction="row" align="center" spacing={2} fontSize="8pt">

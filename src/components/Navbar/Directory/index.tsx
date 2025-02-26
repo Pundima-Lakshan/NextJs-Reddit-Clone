@@ -38,7 +38,7 @@ const Directory: FC = () => {
               <ChevronDownIcon color="gray.500" />
             </Flex>
           </MenuButton>
-          <MenuList maxHeight="300px" overflow="scroll" overflowX="hidden">
+          <MenuList maxHeight="300px" overflow="auto" overflowX="hidden">
             <Communities />
           </MenuList>
         </>

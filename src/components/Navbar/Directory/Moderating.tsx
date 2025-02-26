@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { FaReddit } from "react-icons/fa";
 
 import { Box, Text } from "@chakra-ui/react";
 
 import { CommunitySnippet } from "../../../types/CommunityState";
 import MenuListItem from "./MenuListItem";
+import { PureflowLogoIcon } from "@/icons";
 
 type ModeratingProps = {
   snippets: CommunitySnippet[];
@@ -17,7 +17,7 @@ const Moderating: FC<ModeratingProps> = ({ snippets }) => {
         MODERATING
       </Text>
       {snippets.map((snippet) => (
-        <MenuListItem key={snippet.communityId} displayText={`r/${snippet.communityId}`} link={`/r/${snippet.communityId}`} icon={FaReddit} iconColor="brand.100" />
+        <MenuListItem key={snippet.communityId} displayText={`r/${snippet.communityId}`} link={`/r/${snippet.communityId}`} icon={PureflowLogoIcon} iconColor="brand.100" />
       ))}
     </Box>
   );

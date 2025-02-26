@@ -12,6 +12,7 @@ import Link from "next/link";
 import { NextRouter } from "next/router";
 
 import { Post } from "../../../types/PostState";
+import { PureflowLogoIcon } from "@/icons";
 
 type PostItemContentProps = {
   post: Post;
@@ -90,7 +91,7 @@ const PostItem: FC<PostItemContentProps> = ({ post, postIdx, onVote, onSelectPos
                   {post.communityImageURL ? (
                     <Image borderRadius="full" boxSize="18px" src={post.communityImageURL} mr={2} alt="community image" />
                   ) : (
-                    <Icon as={FaReddit} fontSize={18} mr={1} color="blue.500" />
+                    <Icon as={PureflowLogoIcon} fontSize={18} mr={1} color="blue.500" />
                   )}
                   <Link href={`r/${post.communityId}`}>
                     <Text fontWeight={700} _hover={{ textDecoration: "underline" }} onClick={(event) => event.stopPropagation()}>{`r/${post.communityId}`}</Text>

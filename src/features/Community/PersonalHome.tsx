@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { FaReddit } from "react-icons/fa";
 
 import { Button, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 
 import useCommunityModal from "../../hooks/useCommunityModal";
 import useCreatePost from "../../hooks/useCreatePost";
+import { PureflowLogoIcon } from "@/icons";
 
 const PersonalHome: FC = () => {
   const { onClick } = useCreatePost();
@@ -20,12 +20,12 @@ const PersonalHome: FC = () => {
         height="34px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/redditPersonalHome.png)"
+        bgImage="url(/images/pureflow-backdrop.jpg)"
         backgroundSize="cover"
       ></Flex>
       <Flex direction="column" p="12px">
         <Flex align="center" mb={2}>
-          <Icon as={FaReddit} fontSize={50} color="brand.100" mr={2} />
+          <Icon as={PureflowLogoIcon} fontSize={50} color="brand.100" mr={2} />
           <Text fontWeight={600}>Home</Text>
         </Flex>
         <Stack spacing={3}>

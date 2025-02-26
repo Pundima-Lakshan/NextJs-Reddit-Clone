@@ -6,6 +6,7 @@ import { IoImageOutline } from "react-icons/io5";
 import { Flex, Icon, Input } from "@chakra-ui/react";
 
 import useCreatePost from "../../hooks/useCreatePost";
+import { PureflowLogoIcon } from "@/icons";
 
 type CreatePostProps = {};
 
@@ -14,7 +15,7 @@ const CreatePostLink: FC<CreatePostProps> = () => {
 
   return (
     <Flex justify="space-evenly" align="center" bg="white" height="56px" borderRadius={4} border="1px solid" borderColor="gray.300" p={2} mb={4}>
-      <Icon as={FaReddit} fontSize={36} color="gray.300" mr={4} />
+      <Icon as={PureflowLogoIcon} fontSize={36} color="gray.300" mr={4} />
       <Input
         placeholder="Create Post"
         fontSize="10pt"
